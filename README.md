@@ -37,7 +37,7 @@ RU:
 </div>
 </br>
 <div>
-4.Для того, чтобы получить наиболее популярную категорию выполним сортировку - ORDER BY ... DESC, а для вывода первой строки ограничем вывод LIMIT 1:
+4.Для того, чтобы получить наиболее популярную категорию выполним сортировку - ORDER BY ... DESC, а для вывода первой строки ограничим вывод LIMIT 1:
 <br />
  <b>
   SELECT goods_type.goods_type_name, SUM(goods_type.goods_type_id) as category_sum FROM orders <br />
