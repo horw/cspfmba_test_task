@@ -25,7 +25,7 @@ RU:
 </div>
 </br>
 <div>
-2.3 Итоговая комманда для итоговой таблица:<br />
+2.3 Комманда для итоговой таблица:<br />
   <b>SELECT *  FROM orders <br />
   INNER JOIN goods ON goods.goods_id = orders.goods_id <br />
   INNER JOIN goods_type ON goods.goods_type_id = goods_type.goods_type_id <br /></b>
