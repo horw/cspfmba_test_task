@@ -17,9 +17,9 @@ RU:
   INNER JOIN goods_type ON goods.goods_type_id = goods_type.goods_type_id 
   
 2.3 Итоговая комманда для итоговой таблица:<br />
-  SELECT *  FROM orders <br />
+  <b>SELECT *  FROM orders <br />
   INNER JOIN goods ON goods.goods_id = orders.goods_id <br />
-  INNER JOIN goods_type ON goods.goods_type_id = goods_type.goods_type_id <br />
+  INNER JOIN goods_type ON goods.goods_type_id = goods_type.goods_type_id <br /></b>
 
 
 3. Чтобы посчитать сумму товаром по категориям необходимо выполнить GROUP BY по полю goods_type_id, добавим необходимый столбец в итоговую таблицу и запишим как "category_sum":<br />
