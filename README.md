@@ -27,10 +27,10 @@ RU:
 
 
 4.Для того, чтобы получить наиболее популярную категорию выполним сортировку - ORDER BY ... DESC, а для вывода первой строки ограничем вывод LIMIT 1:
-
-SELECT goods_type.goods_type_name, SUM(goods_type.goods_type_id) as category_sum FROM orders 
-INNER JOIN goods ON goods.goods_id = orders.goods_id 
-INNER JOIN goods_type ON goods.goods_type_id = goods_type.goods_type_id 
+<br />
+SELECT goods_type.goods_type_name, SUM(goods_type.goods_type_id) as category_sum FROM orders <br />
+INNER JOIN goods ON goods.goods_id = orders.goods_id <br />
+INNER JOIN goods_type ON goods.goods_type_id = goods_type.goods_type_id <br />
 GROUP BY goods_type.goods_type_id ORDER BY category_sum DESC LIMIT 1
 
 5. Итог: Для заданого примера Топ-1 категорией является cookie, с количеством 12 шт.
